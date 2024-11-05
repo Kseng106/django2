@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>开着电驴去自驾🛵</h1>
+<div>{{ n1 }}</div>
+<div>{{ n2 }}</div>
+
+<div>{{ n2.0 }}</div>
+<div>{{ n2.1 }}</div>
+<div>{{ n2.2 }}</div>
+<div>
+    {% for item in n2 %}
+        <span>{{ item }}</span>
+    {% endfor %}
+</div>
+<hr/>
+{{ n3 }}
+{{ n3.name }}
+{{ n3.salary }}
+{{ n3.role }}
+<ul>
+    {% for k,v in n3.items %}
+        <li>{{ k }} = {{ v }} </li>
+    {% endfor %}
+</ul>
+
+<hr/>
+{{ n4 }}
+{{ n4.name }}
+{{ n4.salary }}
+{{ n4.role }}
+<ul>
+    {% for k,v in n4.items %}
+        <li>{{ k }} = {{ v }} </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

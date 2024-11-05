@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+    <!-- 你可以在这里添加其他的head元素，例如CSS样式表链接 -->
+</head>
+<body>
+    <h1>Book List</h1>
+
+    <ul>
+    {% for book in books %}
+        <li>
+            <h2>{{ book.title }}</h2>
+            <p>Author: {{ book.author }}</p>
+            <p>Publication Date: {{ book.publication_date }}</p>
+        </li>
+    {% empty %}
+        <li>No books available.</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
